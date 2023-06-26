@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>File Upload</title>
+  </head>
+  <body>
+    <h1>File Upload</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+      <div>
+        <label for="file">Select a file:</label>
+        <input type="file" name="uploaded_file" id="file" />
+      </div>
+      <div>
+        <label for="text1">Year:</label>
+        <input type="text" name="year" id="text1" />
+      </div>
+      <div>
+        <label for="text2"> Sem: </label></label>
+        <input type="text" name="sem" id="text2" />
+      </div>
+      <div>
+        <input type="submit" value="Upload" />
+      </div>
+    </form>
+  </body>
+</html>
