@@ -1,20 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>HTML</title>
-  
-  <!-- HTML -->
-  
-
-  <!-- Custom Styles -->
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="substyle.css">
-  <style>
-    body {
+body {
     font-size: 15pt;
     margin: 0px;
     padding: 0px;
@@ -226,60 +210,3 @@ form #searchbox{
   margin-right: -4px;
 }*/
 }
-  </style>
-</head>
-
-<body>
-<div id="front">
-  <nav>
-    <input type="checkbox" name="check" id="check">
-    <label for="check">
-      <i id="btn">menu</i>
-      <i class="fas fa-times" id="cancel">cancel</i>
-    </label>
-    <h1><b><i>Nepcon</i></b></h1>
-    <ul>
-      <li><a href="homepage.html">home</a></li>
-      <li><a href="#">about us</a></li>
-      <li><a href="#">contact</a></li>
-      <li><a href="services.html">services</a></li>
-      <li><a href="#">feedback</a></li>
-    </ul>
-  </nav>
-  <br>
-  <h2>This website is programmed especially for second year(first semester) computer students(Pyay).</h2>
-  <br>
-  <hr align="center">
-    <br>
-    <img src="/kelly-sikkema-YnRNdB-XTME-unsplash.jpg" alt="This is a picture">
-    <br><hr><br>
-  <div id="subjects">
-     <button><a href="/subject/english">E-2101______(English)</a></button>
-       <button><a href="/subject/calculus">CST-2142__(Calculus)</a></button>
-       <button><a href="/subject/html">SK-2155_(HTML+CSS)</a></button>
-        <button><a href="/subject/java">CST-2111(JAVA programming)</a></button>
-          <button><a href="/subject/digital">CST-2133(Digital Fundamental)</a></button>
-          <button><a href="/subject/database">CST-2124(Database Management system)</a></button>
-  </div>
-  </div>
-  <br>
-  <hr>
-  <br>
-  <p class="pp">Remember that learning a subject is not only about memorizing formulas and facts. It is an intricate process that involves understanding, critical thinking, and practical application.</p><br>
-  <p class="pp">
-    True learning goes beyond the acquisition of knowledge; it is about cultivating a deep comprehension and developing valuable skills that can be applied in various contexts.
-  </p><br><hr><br>
-  <p class="pp">Memorization alone may allow one to recall information temporarily, but it often lacks meaning and fails to foster a genuine understanding of the subject matter. When we merely memorize, we are like passive repositories, storing data without actively engaging with it. </p><br>
-  <p class="pp">The knowledge we gain must be put into practice to solidify our understanding and develop proficiency. Whether it's solving problems, conducting experiments, or applying concepts to real-world scenarios, practical application enhances our learning experience. It bridges the gap between theory and reality, fostering a deeper connection to the subject matter.</p>
-  <br><hr><br>
-  <p class="pp">Learning transcends the boundaries of a classroom. It extends beyond textbooks and lectures, encompassing various learning modalities. </p>
-  <p style="text-align: center;font-size: 12px">Remember that English is more than a subject.It is a language.</p>
-  <!-- Project -->
-  <script src="main.js"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      uploadFiles();
-    });
-  </script>
-</body>
-</html>

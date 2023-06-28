@@ -46,16 +46,25 @@ exports.postFile =  (req, res) => {
   const sem = req.body.sem;
   */
   // Handle the success of the file upload
-  res.send(`File uploaded successfully. Original file name: ${req.file.filename}. File type: ${fileType}`);
+  res.send(`File uploaded successfully. Original file name: . File type: `);
 })}
 
-exports.changeSubject = (req,res) => {
+exports.reqSubject = (req,res) => {
   const subj = req.params.subject;
   //findd out from database 
-  
 }
 
+exports.resSubject = (req,res) => {
+  //console.log(req.params[sub])
+  console.log(req.params)
+  let sub1 = req.params.sub;
+ 
+  
+ 
+  res.render('Subject',
+  {subject:`this is page ${sub1}`})
+}
 
-
-
-
+exports.subjectPage = (req,res) =>{
+  res.render('subjects')
+}
