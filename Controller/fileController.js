@@ -1,6 +1,7 @@
 const multer = require('multer');
 const path = require('path');
 const File = require('./../Model/file')
+
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
     cb(null, path.join(__dirname, 'upload'));
@@ -18,7 +19,7 @@ const upload = multer({ storage: storage });
 
 
 exports.getUploadPage = (req, res) => {
-  res.render('index.ejs');
+  res.render('uploadForm.ejs');
 };
 
 exports.postFile =  (req, res) => {
@@ -26,6 +27,20 @@ exports.postFile =  (req, res) => {
   (req,res,(err) =>{ if(err){
   return res.status(400).json({ error: err.message })
   }
+  
+  //console.log(req.body.sub);
+  //console.log(req.body.displayName);
+  
+  const FILE = new File ({
+    fileName: req.body.displayName,
+    filePathName: req.file.filename,
+    subject: req.body.sub,
+    semester: req.body.sem
+  });
+  FILE.save()
+  .then(con => console.log(con) )
+  .catch(err => console.log(err))
+  //console.log(req.file.filename);
  /* const FILE = new File{
     fileName: ,
     filePath:req.body.,

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+  <html>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Upload page</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body id="inp">
+
+    <form action="/upload" id="mo" method="post" enctype="multipart/form-data">
+      <label for="file">File:</label> <input type="file" name="uploaded_file"><br><br><br>
+      
+      <input type="text" name="displayName">
+      
+      <div id="subj">
+        <label for="subb">Subjects:</label>
+        <ul type="none" id="subb">
+          <li><input type="radio" name="sub" id="eng" value="english"><label for="eng">eng</label></li>
+          <li><input type="radio" name="sub" id="math" value="math"><label for="math">math</label></li>
+          <li><input type="radio" name="sub" id="digital" value="digital"><label for="digital">digital</label></li>
+          <li><input type="radio" name="sub" id="database" value="database"><label for="database">dbms</label></li>
+          <li><input type="radio" name="sub" id="java" value="java"><label for="java">java</label></li>
+          <li><input type="radio" name="sub" id="web" value="web"><label for="web">html+css</label></li>
+        </ul>
+      </div><br><br>
+      <div id="seme">
+        <label for="semester">semester</label>
+        <ul type="none" id="semester">
+          <li><input id="second" type="radio" name="sem" value="first">first semester</li>
+          <li><input id="first" type="radio" name="sem" value="second">second semester</li>
+
+        </ul>
+      </div>
+      <input type="submit" id="submit" value="upload">
+      <input type="reset" id="reset" value="cancel">
+    </form>
+
+  </body>
+
+  </html>

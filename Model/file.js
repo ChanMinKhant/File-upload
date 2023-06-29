@@ -4,18 +4,19 @@ const mongoose = require("mongoose");
  const fileSchema = new Schema({ 
    fileName: { 
      type: String, 
+     required: true
    }, 
-   filePath: { 
+   filePathName: { 
      type: String, 
-     //required: true, 
+     required: true, 
    }, 
-   year: { 
+   subject: { 
      type: String, 
-     //required: true, 
+     required: true, 
    },
    semester: {
      type: String,
-     //require: true,
+     require: true,
    }
    
  }); 
